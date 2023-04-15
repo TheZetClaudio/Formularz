@@ -139,13 +139,8 @@ section{
 }
 .or{
     height: 2px;
-<<<<<<< HEAD
-    width: 400px;
-    background: rgb(104, 104, 100);
-=======
     width: 450px;
     background: rgb(123, 123, 119);
->>>>>>> test
     text-align: center;
     margin: 20px 0px 16px;
     position: relative;
@@ -173,13 +168,8 @@ input[type=email]{
     width: 300px;
     height: 42px;
     border: 2px solid;
-<<<<<<< HEAD
-    border-color: rgb(92, 85, 85);
-    border-radius: 5px;
-=======
     border-color: rgb(65, 59, 59);
     border-radius: 12px;
->>>>>>> test
     padding: 5px;
     background: rgb(19, 10, 10);
     color: #fff;
@@ -188,26 +178,12 @@ input[type=password]{
     width: 300px;
     height: 42px;
     border: 2px solid;
-<<<<<<< HEAD
-    border-color:rgb(92, 85, 85);
-    border-radius: 5px;
-=======
     border-color: rgb(65, 59, 59);
     border-radius: 12px;
->>>>>>> test
     padding: 5px;
     background:rgb(19, 10, 10);
     color: #fff;
 }
-<<<<<<< HEAD
-input[type=email]:hover{
-    scale: 1.02;
-    background: rgb(66, 61, 61);
-}
-input[type=password]:hover{
-    scale: 1.02;
-    background: rgb(66, 61, 61);
-=======
 input[type=password]:hover{
     scale: 1.02;
     background: rgb(110, 88, 88);
@@ -215,40 +191,21 @@ input[type=password]:hover{
 input[type=email]:hover{
     scale: 1.02;
     background: rgb(110, 88, 88);
->>>>>>> test
+
 }
 .label-down{
     width: 300px;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-    margin: 5px;
-=======
+
     margin-bottom: 10px;
 
->>>>>>> test
 }
 .login_button{
     display: flex;
     justify-content: center;
     position: relative;
-<<<<<<< HEAD
-    top: 30px;
-}
-input[type=button]{
-    width: 110px;
-    height: 45px;
-    color: #fff;
-    background: black;
-    border-radius: 5px;
-    border: 2px solid;
-    border-color: #fff;
-}
-input[type=button]:hover{
-    background: rgb(55, 53, 53);
-    scale: 1.02;
-}
-=======
+
     top: 35px;
 }
 input[type=button]{
@@ -267,4 +224,3 @@ input[type=button]:hover{
     border-radius: 0px;
     cursor: pointer;
 }
->>>>>>> test
