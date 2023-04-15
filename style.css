@@ -110,7 +110,7 @@ section{
 .left{
     width: 540px;
     height: 660px;
-    background: rgb(19, 10, 10);
+    background: rgb(44, 44, 44);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,7 +155,7 @@ section{
 .or{
     height: 2px;
     width: 400px;
-    background: rgb(56, 56, 55);
+    background: rgb(123, 123, 119);
     text-align: center;
     margin: 20px 0px 16px;
     position: relative;
@@ -164,7 +164,7 @@ section{
 .or span{
     color: rgba(255, 255, 255, 0.8);
     font-size: 16px;
-    background:rgb(19, 10, 10);
+    background:rgb(44, 44, 44);
     padding: 0px 30px;
     position: relative;
     top: -10px;
@@ -180,27 +180,57 @@ section{
     color: #fff;
 }
 input[type=email]{
-    width: 270px;
+    width: 300px;
     height: 42px;
     border: 2px solid;
     border-color: rgb(65, 59, 59);
-    border-radius: 5px;
+    border-radius: 12px;
     padding: 5px;
     background: rgb(19, 10, 10);
     color: #fff;
 }
 input[type=password]{
-    width: 270px;
+    width: 300px;
     height: 42px;
     border: 2px solid;
     border-color: rgb(65, 59, 59);
-    border-radius: 5px;
+    border-radius: 12px;
     padding: 5px;
     background:rgb(19, 10, 10);
     color: #fff;
+}
+input[type=password]:hover{
+    scale: 1.02;
+    background: rgb(110, 88, 88);
+}
+input[type=email]:hover{
+    scale: 1.02;
+    background: rgb(110, 88, 88);
 }
 .label-down{
     display: flex;
     justify-content: center;
     margin: 5px;
+}
+.login_button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+input[type=button]{
+    width: 140px;
+    height: 45px;
+    color: #fff;
+    background: rgb(44, 44, 44);
+    border: 2px solid;
+    border-color: #fff;
+    border-radius: 7px;
+}
+input[type=button]:hover{
+    scale: 1.05;
+    transition: 550ms;
+    border-bottom: 1px solid;
+    border-color: #fff;
+    border-radius: 0px;
 }
