@@ -133,9 +133,13 @@ section{
     color: black;
 }
 .link1:hover{
-    background: rgb(8, 167, 196);
     scale: 1.12;
-    transition: 800ms;
+    background: rgb(44, 44, 44);
+    color: #fff;
+    border: 2px solid;
+    border-color: #fff;
+    transition:  800ms ease-in;
+    border-radius: 5px;
 }
 .or{
     height: 2px;
