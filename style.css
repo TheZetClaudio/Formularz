@@ -228,6 +228,10 @@ input[type=button]:hover{
     border-radius: 0px;
     cursor: pointer;
 }
+::placeholder{
+    position: relative;
+    left: 15px;
+}
 .dopis{
     display: flex;
     flex-direction: row;
