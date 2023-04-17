@@ -171,8 +171,8 @@ section{
 input[type=email]{
     width: 300px;
     height: 42px;
-    border: 2px solid;
-    border-color: rgb(65, 59, 59);
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
     border-radius: 12px;
     padding: 5px;
     background: rgb(19, 10, 10);
@@ -181,8 +181,8 @@ input[type=email]{
 input[type=password]{
     width: 300px;
     height: 42px;
-    border: 2px solid;
-    border-color: rgb(65, 59, 59);
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
     border-radius: 12px;
     padding: 5px;
     background:rgb(19, 10, 10);
@@ -227,4 +227,16 @@ input[type=button]:hover{
     border-color: rgb(44, 44, 44) rgb(44, 44, 44) #fff;
     border-radius: 0px;
     cursor: pointer;
+}
+.dopis{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    gap: 25px;
+    color: #fff;
+    margin-top: 7px;
+}
+.dopis a{
+    color: #7965af;
 }
