@@ -18,8 +18,9 @@ header{
     flex-direction: column;
    border-bottom: 2px solid;
    border-color: rgb(56, 56, 55);
+   z-index: 1;
 }
-.he_all{
+.nav-bar{
     padding-left: 24px;         
     padding-right: 24px; 
     display: flex;
@@ -35,12 +36,12 @@ header{
     font-size: 1.3rem;
     color: #ebe9e9;
 }
-.przyciski{
+.Links{
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-.przyciski a{
+.Links a{
     scale: 0.85;
     color: #fff;
     font-size: 1rem;
@@ -52,13 +53,13 @@ header{
     justify-content: center;
     margin-right: 5px;
 }
-.przyciski a:hover{
+.Links a:hover{
     scale: 1.1;
     transition: 550ms;
     border-color: rgba(32, 32, 32) rgba(32, 32, 32) #fff;
     border-radius: 0px;
 }
-.przyciski .rej{
+.Links .register-link{
     height: 50px;
     width: 130px;
     background: transparent;
@@ -70,27 +71,29 @@ header{
     color: rgb(226, 219, 211);
     font-size: 1rem;
 }
-.przyciski .rej:hover{
+.Links .register-link:hover{
     scale: 1.1;
     transition: 550ms;
     border-color: rgba(32, 32, 32) rgba(32, 32, 32) #fff;
     border-radius: 0px;
 }
 @media screen and (max-width: 1100px) {
-    .przyciski a{
+    .Links a{
         display: none;
     }
 }
+
 /* Add working list when width is less then 1100px */
 
-/*      MID    ------------------------------------------------------------------------------------------------- */
+/*      LEFT    ------------------------------------------------------------------------------------------------- */
 section{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     height: 90vh;
     justify-content: center;
     background: rgb(44, 44, 44);
+    
 }
 .left{
     width: 540px;
@@ -102,7 +105,26 @@ section{
     align-items: center;
     border-radius: 30px;
 }
-.napis{  
+.Login-button-mid{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 35px;
+
+    display: none;
+}
+.Login-button-mid input[type=button]{
+    width: 140px;
+    height: 45px;
+    color: #fff;
+    background: rgb(44, 44, 44);
+    border: 2px solid;
+    border-color: #fff ;
+    border-radius: 15px;
+    position: relative;
+    top: -100px;
+}
+.Sign-Left{  
     position: relative;
     top: -100px;
     height: 100px;
@@ -158,14 +180,15 @@ section{
     position: relative;
     top: -10px;
 }
-/*     Down     ------------------------------------------------------------------------------------------------- */
+/*     LEFT FORM     ------------------------------------------------------------------------------------------------- */
 
-.login{
+.login-form{
+    margin-top: 10px;
     width: calc(100% + 16px);
     color: #fff;
 }
-.Password{
-    margin-top: 20px;
+.Password-form{
+    margin-top: 10px;
     color: #fff;
 }
 input[type=email]{
@@ -197,13 +220,12 @@ input[type=email]:hover{
     background: rgb(110, 88, 88);
 
 }
-.label-down{
+.left .label-down{
     width: 300px;
     display: flex;
     justify-content: center;
-
     margin-bottom: 10px;
-
+    font-size: small;
 }
 .login_button{
     display: flex;
@@ -212,7 +234,7 @@ input[type=email]:hover{
 
     top: 35px;
 }
-input[type=button]{
+.login_button input[type=button]{
     width: 140px;
     height: 45px;
     color: #fff;
@@ -221,7 +243,7 @@ input[type=button]{
     border-color: #fff ;
     border-radius: 15px;
 }
-input[type=button]:hover{
+.login_button input[type=button]:hover{
     scale: 1.13;
     transition: 450ms;
     border-color: rgb(44, 44, 44) rgb(44, 44, 44) #fff;
@@ -243,4 +265,50 @@ input[type=button]:hover{
 }
 .dopis a{
     color: #7965af;
+}
+.Split{
+    height: 450px;
+    width: 2px;
+    background: rgb(123, 123, 119);
+    text-align: center;
+    margin: 20px 10px 16px;
+    position: relative;
+    top: -20px;
+}
+/*     RIGHT    ------------------------------------------------------------------------------------------------- */
+
+.right{
+    width: 540px;
+    height: 660px;
+    background: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.Register-button-mid{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 35px;
+
+    display: none;
+}
+.Sign-Right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    height: 100px;
+    width: 280px;
+    font-size: 2rem;
+    color: white;
+}
+.right .label-down{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: small;
 }

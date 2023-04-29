@@ -10,21 +10,21 @@
 <body>
 <!-----------------------------------NAVBAR--------------------------------------------------->
   <header>
-    <div class="he_all">
+    <div class="nav-bar">
         <div class="logo"><a href="https://www.google.pl"><h2>K.Pieńkowski</h2></a></div>
-        <div class="przyciski">
+        <div class="Links">
             <a href="#"><p>GitHub</p></a>
             <a href="https://www.youtube.com/watch?v=Jrg9KxGNeJY"><p>Youtobe</p></a>
             <a href="https://github.com/TheZetClaudio/Portfolio"><p>Portfolio</p></a>
-            <button class="rej">Zarejestruj się</button>
+            <button class="register-link">Zarejestruj się</button>
         </div>             
     </div>
   </header>
-<!---------------------------------------MID----------------------------------------------->
+<!---------------------------------------LEFT----------------------------------------------->
   <section>
     <div class="left">
-        
-        <div class="napis">
+        <div class="Login-button-mid"><input type="button" value="Zaloguj Się"></div>
+        <div class="Sign-Left">
             <h1>Sign in With</h1>
         </div>
         <div class="logowanie">
@@ -33,25 +33,20 @@
         </div>
     
         <div class="or"><span>or</span></div>
- <!---------------------------------------DOWN----------------------------------------------->
+                                <!--------------LEFT FORM-------------->
+
         <form action="Index.html">
-            <div class="login">
-                <div class="label-down">
-                    <label for="Email">Email</label>
-                </div>
-                <div class="input-email">
-                    <input type="email" placeholder="Email">
-                </div>
+            <div class="login-form">
+                <div class="label-down"><label for="Email">Email</label></div>
+
+                <div class="input-email"><input type="email" placeholder="Email"></div>
             </div>
-            <br>
-            <div class="Password">
+        <br>
+            <div class="Password-form">
                 <div class="haslo-in">
-                    <div class="label-down">
-                        <label for="Haslo">Hasło</label>
-                    </div>
-                    <div class="input-haslo">
-                        <input type="password" placeholder="Password">
-                    </div>
+                    <div class="label-down"><label for="Haslo">Hasło</label></div>
+
+                    <div class="input-haslo"><input type="password" placeholder="Password"></div>
                 </div>
             </div>
             <div class="dopis">
@@ -60,6 +55,47 @@
             </div>
             <div class="login_button"><input type="button" value="Zaloguj"></div>
         </form>
+    </div>
+
+    <div class="Split"></div>
+
+     <!---------------------------------------RIGHT----------------------------------------------->
+    <div class="right">
+        <div class="Register-button-mid"><input type="button" value="Zarejestruj się"></div>
+        <div class="Sign-Right">
+            <h1>Register</h1>
+        </div>
+                               <!--------------RIGHT FORM-------------->
+        <form action="Index.html">
+            <div class="login-form">
+                <div class="label-down"><label for="Email">Email</label></div>
+
+                <div class="input-email"><input type="email" placeholder="Email"></div>
+            </div>
+        <br>
+            <div class="login-form">
+                <div class="label-down"><label for="Email">Nick (Nazwa Konta)</label></div>
+
+                <div class="input-email"><input type="email" placeholder="Nick"></div>
+            </div>
+         <br>
+            <div class="Password-form">
+                <div class="haslo-in">
+                    <div class="label-down"><label for="Haslo">Hasło</label></div>
+
+                    <div class="input-haslo"><input type="password" placeholder="Password"></div>
+                </div>
+            </div>
+        <br>
+            <div class="Password-form">
+                <div class="haslo-in">
+                    <div class="label-down"><label for="Haslo">Potwierdź Hasło</label></div>
+
+                    <div class="input-haslo"><input type="password" placeholder="Password"></div>
+                </div>
+            </div>
+        
+            <div class="login_button"><input type="button" value="Zarejestruj Się"></div>
     </div>
   </section>
   <!-- <script src="/app.js"></script> -->
