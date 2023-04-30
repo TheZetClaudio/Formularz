@@ -123,6 +123,12 @@ section{
     border-radius: 12px;
     font-size: 1.3rem;
     cursor: pointer;
+    position: relative;
+    top: -20px;
+}
+.Login-button-mid input[type=button]:hover{
+    scale: 1.2;
+    transition: 0.8s;
 }
 .Sign-Left{  
     position: relative;
