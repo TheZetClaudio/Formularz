@@ -26,7 +26,7 @@ LogingButton.addEventListener('click', ShowLogin);
 
 let ShowRegister = () => {
     RegisterButton.style.display='none';
-    SignRight.style.display='block';
+    SignRight.style.display='flex';
     FormRight.style.display='block';
 
     LogingButton.style.display='block';
