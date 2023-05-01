@@ -34,6 +34,5 @@ let ShowRegister = () => {
     FormLeft.style.display='none';
     Or.style.display='none';
     Links.style.display='none';
-
 };
 RegisterButton.addEventListener('click', ShowRegister);
