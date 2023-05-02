@@ -1,17 +1,32 @@
-let LogingButton = document.querySelector('.Login-button-mid');
-let SignLeft = document.querySelector('.Sign-Left');
-let FormLeft = document.querySelector('.form-left')
-let Or = document.querySelector('.or');
-let Links = document.querySelector('.logowanie');
+const LogingButton = document.querySelector('.Login-button-mid');
+const SignLeft = document.querySelector('.Sign-Left');
+const FormLeft = document.querySelector('.form-left')
+const Or = document.querySelector('.or');
+const Links = document.querySelector('.logowanie');
 
+const RegisterButton = document.querySelector('.Register-button-mid');
+const SignRight = document.querySelector('.Sign-Right');
+const FormRight = document.querySelector('.form-right');
+const SubmitRegisterButton = document.querySelector('.register-submit');
 
+function SendRegisterCredentials() {
+    const inputs = document.querySelector('.actual-form').querySelectorAll('input');
+    const [ mail, nick, password ] = inputs;
 
-let RegisterButton = document.querySelector('.Register-button-mid');
-let SignRight = document.querySelector('.Sign-Right');
-let FormRight = document.querySelector('.form-right');
+    fetch('http://localhost:8080/register', {
+        method: 'POST',
+        body: JSON.stringify({
+            mail: mail.value,
+            nick: nick.value,
+            password: password.value
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(res => res.text()).then(console.log);
+}
 
-
-let ShowLogin = () => {
+function ShowLogin() {
     LogingButton.style.display='none';
     SignLeft.style.display='block';
     FormLeft.style.display='block';
@@ -22,17 +37,19 @@ let ShowLogin = () => {
     SignRight.style.display='none';
     FormRight.style.display='none';
 };
-LogingButton.addEventListener('click', ShowLogin);
 
-let ShowRegister = () => {
+function ShowRegister() {
     RegisterButton.style.display='none';
     SignRight.style.display='flex';
     FormRight.style.display='block';
-
+    
     LogingButton.style.display='block';
     SignLeft.style.display='none';
     FormLeft.style.display='none';
     Or.style.display='none';
     Links.style.display='none';
 };
+
+LogingButton.addEventListener('click', ShowLogin);
 RegisterButton.addEventListener('click', ShowRegister);
+SubmitRegisterButton.addEventListener('click', SendRegisterCredentials);
