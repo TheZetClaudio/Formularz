@@ -107,6 +107,7 @@ section{
     scale: 1.2;
     transition: 0.8s;
 }
+
 .Sign-Left{  
     position: relative;
     top: -100px;
@@ -216,7 +217,7 @@ input[type=email]:hover{
 
     top: 35px;
 }
-.login_button input[type=button]{
+.login_button input[type=submit]{
     width: 140px;
     height: 45px;
     color: #fff;
@@ -225,7 +226,7 @@ input[type=email]:hover{
     border-color: #fff ;
     border-radius: 15px;
 }
-.login_button input[type=button]:hover{
+.login_button input[type=submit]:hover{
     scale: 1.13;
     transition: 450ms;
     border-color: rgb(44, 44, 44) rgb(44, 44, 44) #fff;

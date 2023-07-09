@@ -1,17 +1,17 @@
-let LogingButton = document.querySelector('.Login-button-mid');
-let SignLeft = document.querySelector('.Sign-Left');
-let FormLeft = document.querySelector('.form-left')
-let Or = document.querySelector('.or');
-let Links = document.querySelector('.logowanie');
+const LogingButton = document.querySelector('.Login-button-mid');
+const SignLeft = document.querySelector('.Sign-Left');
+const FormLeft = document.querySelector('.form-left')
+const Or = document.querySelector('.or');
+const Links = document.querySelector('.logowanie');
 
 
 
-let RegisterButton = document.querySelector('.Register-button-mid');
-let SignRight = document.querySelector('.Sign-Right');
-let FormRight = document.querySelector('.form-right');
+const RegisterButton = document.querySelector('.Register-button-mid');
+const SignRight = document.querySelector('.Sign-Right');
+const FormRight = document.querySelector('.form-right');
 
 
-let ShowLogin = () => {
+function ShowLogin () {
     LogingButton.style.display='none';
     SignLeft.style.display='block';
     FormLeft.style.display='block';
@@ -24,7 +24,7 @@ let ShowLogin = () => {
 };
 LogingButton.addEventListener('click', ShowLogin);
 
-let ShowRegister = () => {
+const ShowRegister = () => {
     RegisterButton.style.display='none';
     SignRight.style.display='flex';
     FormRight.style.display='block';
